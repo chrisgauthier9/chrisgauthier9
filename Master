@@ -4,3 +4,25 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/chrisgauthier9/chrisgauthier9.git
 git push -u origin master
+
+
+import numpy as np
+from keras import models
+from keras import layers
+
+def testOne():
+  model = models.Sequential()
+  
+from pandas import read_csv
+from pandas import datetime
+from matplotlib import pyplot
+from google.colab import files
+uploaded = files.upload()
+
+def parser(x):
+  return datetime.strptime(x, '%Y-%m')
+
+series = read_csv('AirPassengers.csv', header=0, parse_dates=[0], index_col=0, squeeze=True, date_parser=parser)
+print(series.head())
+series.plot()
+pyplot.show()
