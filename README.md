@@ -1,4 +1,4 @@
-# chrisgauthier9
+# ARIMA Model
 #READ ME
 
-#ARIMA Model
+#Ariana, David and Chris
